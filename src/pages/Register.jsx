@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import { Navigate, Link, useNavigate } from 'react-router-dom'
+import { Navigate, Link } from 'react-router-dom'
 import { useAuth } from '../contexts/authContext/authContext'
 import { doCreateUserWithEmailAndPassword } from '../firebase/auth'
 
 function Register() {
-    const navigate = useNavigate()
+   
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
